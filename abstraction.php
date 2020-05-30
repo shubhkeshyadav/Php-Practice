@@ -1,3 +1,6 @@
+<!--Concept of Abstraction in PHP is important php oop (object oriented programming) concept.
+
+To show the needed/relevant information or details without showing all information which is not necessary is called abstraction.--!>
 <?php
 
 Abstract Class BaseEmp
