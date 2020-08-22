@@ -1,0 +1,210 @@
+############# Case condition #######################################################
+
+DELIMITER $$
+CREATE DEFINER=`admin_live`@`localhost` PROCEDURE `CASEcondition`(IN `user_id` INT, OUT `user_name` VARCHAR(50))
+BEGIN
+
+    	SELECT first_name INTO user_name FROM tbl_users WHERE id = user_id;
+        
+        CASE
+        	WHEN isnull(user_name) THEN
+            	SET user_name = 'Not found';
+            ELSE 
+            	SET user_name = user_name;
+        END CASE;
+        
+    END$$
+DELIMITER ;
+
+
+
+############# If condition ##########################################################
+
+DELIMITER $$
+CREATE DEFINER=`admin_live`@`localhost` PROCEDURE `ifcondition`(IN `user_id` INT, OUT `user_name` VARCHAR(50))
+BEGIN
+
+    	SELECT first_name INTO user_name FROM tbl_users WHERE id = user_id;
+        
+        IF isnull(user_name) THEN
+         SET user_name = 'Not Found';
+        END IF;
+        
+    END$$
+DELIMITER ;
+
+############# In input type-1 #######################################################
+
+DELIMITER $$
+CREATE DEFINER=`admin_live`@`localhost` PROCEDURE `in_1`()
+BEGIN
+	SELECT * FROM tbl_users WHERE id < 10;
+END$$
+DELIMITER ;
+
+############# In input type-2 #######################################################
+
+DELIMITER $$
+CREATE DEFINER=`admin_live`@`localhost` PROCEDURE `in_2`(IN `user_id` INT)
+BEGIN
+    	SELECT id,concat(first_name,' ',last_name) as full_name FROM tbl_users WHERE id = user_id;
+    END$$
+DELIMITER ;
+
+############# InOut input type-1  #################################################
+
+DELIMITER $$
+CREATE DEFINER=`admin_live`@`localhost` PROCEDURE `inout_1`(INOUT `user` VARCHAR(255))
+BEGIN
+ 		SELECT phone,first_name INTO user FROM tbl_users WHERE id = user;
+ END$$
+DELIMITER ;
+
+
+############# Loop Statement  #################################################
+
+DELIMITER $$
+CREATE DEFINER=`admin_live`@`localhost` PROCEDURE `loop Statement`(IN `num` INT)
+BEGIN
+    	DECLARE i INT DEFAULT 1;
+        DECLARE f_table varchar(100) DEFAULT '';
+        
+        loop_name : LOOP
+             IF i > 10 THEN
+                LEAVE loop_name;
+             END IF;
+            
+            IF (i MOD 2) THEN
+            	ITERATE loop_name;
+            END IF;
+             
+             SET f_table = CONCAT(f_table,i*num,',');
+             SET i = i+1;
+   		END LOOP;
+        
+        SELECT f_table;
+    END$$
+DELIMITER ;
+
+
+############# OUT input type-1 ######################################################
+
+DELIMITER $$
+CREATE DEFINER=`admin_live`@`localhost` PROCEDURE `out_1`(OUT `total_users` INT)
+BEGIN
+	DECLARE count_total INT DEFAULT 5;
+    DECLARE nn varchar(50) DEFAULT null;
+    
+    SET total_users = count_total;
+    SET nn = DATE_FORMAT(now(),"%d %m %y");
+    
+    SELECT nn,total_users;
+END$$
+DELIMITER ;
+
+
+############# OUT input type-2 ######################################################
+
+DELIMITER $$
+CREATE DEFINER=`admin_live`@`localhost` PROCEDURE `out_2`(OUT `count_total` INT)
+BEGIN 
+    	SELECT COUNT(id) INTO count_total FROM tbl_users;
+    END$$
+DELIMITER ;
+
+
+############# OUT input type-3 ######################################################
+
+DELIMITER $$
+CREATE DEFINER=`admin_live`@`localhost` PROCEDURE `out_3`(OUT `p1` VARCHAR(100), OUT `p2` VARCHAR(100), OUT `p3` VARCHAR(100))
+BEGIN
+    	DECLARE name varchar(100) DEFAULT null;
+        DECLARE mobile varchar(100) DEFAULT null;
+        DECLARE email varchar(100) DEFAULT null;
+        
+        SET name = 'Shubhkesh';
+        SET email = 'shubhkesh@gmail.com';
+        SET mobile = '9456435743';
+        
+        SET p1 = name;
+        SET p2 = email;
+        SET p3 = mobile;
+        
+    END$$
+DELIMITER ;
+
+
+############# Repeat Loop Statement ##############################################
+
+DELIMITER $$
+CREATE DEFINER=`admin_live`@`localhost` PROCEDURE `repeat_loop`(IN `num` INT)
+BEGIN
+    	DECLARE i INT DEFAULT 1;
+        DECLARE f_table varchar(100) DEFAULT '';
+        REPEAT
+        	
+        	SET f_table = CONCAT(f_table,i*num,',');
+            SET i = i+1;
+        	UNTIL i > 10
+        END REPEAT;
+        
+        SELECT f_table;
+    END$$
+DELIMITER ;
+
+
+############# While Loop Statement ##############################################
+
+DELIMITER $$
+CREATE DEFINER=`admin_live`@`localhost` PROCEDURE `while_loop`(IN `num` INT)
+BEGIN
+    	DECLARE i INT DEFAULT 1;
+        DECLARE f_table varchar(100) DEFAULT '';
+        while(i <=10) DO
+        	SET f_table = CONCAT(f_table,i*num,',');
+        	SET i = i+1;
+        END WHILE;
+        
+        SELECT f_table;
+    END$$
+DELIMITER ;
+
+
+############# Function For Time Format Value into String conversion ############
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` FUNCTION `time_string`(`time_str` VARCHAR(50)) RETURNS varchar(20) CHARSET utf8mb4
+    DETERMINISTIC
+BEGIN
+	DECLARE t_string varchar(100) DEFAULT '';
+    DECLARE h INT(50);
+    DECLARE m INT(50);
+    DECLARE s1 varchar(50);
+    DECLARE s2 varchar(50);
+    
+    SET h = SUBSTRING(time_str,1,2);
+    SET m = SUBSTRING(time_str,4,2);
+
+	if h > 0 THEN
+    	SET s1 = 'Hour';
+    	if h > 1 THEN
+        	SET s1 = "Hours";
+        END IF;
+      SET t_string = CONCAT(t_string,'',h,' ',s1);  
+    END IF;
+    
+    SET t_string = CONCAT(t_string,' ');  
+    
+    if m > 0 THEN
+    	SET s2 = 'Minute';
+    	if m > 1 THEN
+        	SET s2 = "Minutes";
+        END IF;
+      SET t_string = CONCAT(t_string,'',m,' ',s2);  
+    END IF;
+    
+    
+    
+    return t_string;
+END$$
+DELIMITER ;
