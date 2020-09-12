@@ -1,0 +1,1 @@
+SELECT max(payment_id) FROM payment WHERE payment_id < (SELECT max(payment_id) FROM payment)
