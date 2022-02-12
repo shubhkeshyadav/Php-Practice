@@ -1,0 +1,27 @@
+1. How you rate yourself in php and mysql ?
+
+Sql
+##################################
+1. 2nd Height Salary with name
+2. Indexing how does it works with Algorithum
+3. Normalization and it's type with example.
+4. ACID Property with real-life example
+5. Difference b/w primary key and unique key. Can unique key may be null ?
+6. Difference b/w null and empty ?
+7. Sql enjection
+8. Difference between truncate and delete ?
+
+
+Php
+###################################
+1. How can we remove home page load ?
+2. Git , How can we remove 5th number merge without loos of data ?
+3. Singleton design patter with example ?
+4. How session and cookie works ?
+5. Login mechanism how does it works. How user will login if user disable cookie in there system ?
+6. Array sort of given array 
+   $arr = [0,1,0,1,0,1,0,1,0];
+7. Abstract and interface with reallife example ?
+8. Difference between error , warning and notice ?
+9. Property of oops ?
+10. Solid Property ?	
