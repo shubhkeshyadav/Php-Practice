@@ -1,0 +1,11 @@
+1	-	The function must return a value but in Stored Procedure it is optional. Even a procedure can return zero or n values.	
+
+2	-	Functions can have only input parameters for it whereas Procedures can have input or output parameters.
+
+3	-	Functions can be called from Procedure whereas Procedures cannot be called from a 			Function.
+
+4	-	The procedure allows SELECT as well as DML(INSERT/UPDATE/DELETE) statement in it 			whereas Function allows only SELECT statement in it.
+
+5	-	An exception can be handled by try-catch block in a Procedure whereas try-catch block cannot be used in a Function.
+
+6	-	We can use Transactions in Procedure whereas we can't use Transactions in Function.

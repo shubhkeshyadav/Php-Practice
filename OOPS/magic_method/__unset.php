@@ -1,7 +1,7 @@
 <?php
 
 /*
-	 __unset() magic method is called when you unset the private & protected and property which are not exist in class, that time __unset() magic method is called.
+	 __unset() magic method is called when you unset the private & protected or the property which are not exist in class, that time __unset() magic method is called.
 */
 
 Class Test

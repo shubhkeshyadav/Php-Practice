@@ -1,0 +1,31 @@
+Advantages :
+
+The main advantages of stored procedure are given below:
+
+Better Performance –
+    The procedure calls are quick and efficient as stored procedures are compiled once and stored in executable form.Hence the response is quick. The executable code is automatically cached, hence lowers the memory requirements.
+Higher Productivity –
+    Since the same piece of code is used again and again so, it results in higher productivity.
+Ease of Use –
+    To create a stored procedure, one can use any Java Integrated Development Environment (IDE). Then, they can be deployed on any tier of network architecture.
+Scalability –
+    Stored procedures increase scalability by isolating application processing on the server.
+Maintainability –
+    Maintaining a procedure on a server is much easier then maintaining copies on various client machines, this is because scripts are in one location.
+Security –
+    Access to the Oracle data can be restricted by allowing users to manipulate the data only through stored procedures that execute with their definer’s privileges.
+
+
+Disadvantages :
+The main disadvantages of stored procedures are given below:
+
+Testing –
+    Testing of a logic which is encapsulated inside a stored procedure is very difficult. Any data errors in handling stored procedures are not generated until runtime.
+Debugging –
+    Depending on the database technology, debugging stored procedures will either be very difficult or not possible at all. Some relational databases such as SQL Server have some debugging capabilities.
+Versioning –
+    Version control is not supported by the stored procedure.
+Cost –
+    An extra developer in the form of DBA is required to access the SQL and write a better stored procedure. This will automatically incur added cost.
+Portability –
+    Complex stored procedures will not always port to upgraded versions of the same database. This is specially true in case of moving from one database type(Oracle) to another database type(MS SQL Server).

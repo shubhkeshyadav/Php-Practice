@@ -1,0 +1,15 @@
+Functions can be either deterministic or nondeterministic. 
+
+A deterministic function always returns the same results if given the same input values. 
+
+A nondeterministic function may return different results every time it is called, even when the same input values are provided.
+
+e.g 
+
+nondeterministic - 
+
+select rand();  // every time different value will give
+
+deterministic -
+
+create user define function

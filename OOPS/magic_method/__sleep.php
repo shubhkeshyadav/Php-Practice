@@ -1,7 +1,9 @@
 <?php
 
 /*
-	 When you serialize and object then __sleep() magic method is called if it exist in class, the __sleep() magic method must return an array of class property, with the help of the __sleep() magic method you can optmised or change the class property's value. If you save the object of the class in DB but it contain large amount of  data so you can optmised the object of class using the __sleep() magic method. 
+	  - When you serialize and object then __sleep() magic method is called
+    - if it exist in class, the __sleep() magic method must return an array of class property, 
+    - with the help of the __sleep() magic method you can optmised or change the class property's value.  - If you save the object of the class in DB but it contain large amount of  data so you can optmised the object of class using the __sleep() magic method. 
 */
 
 Class Test

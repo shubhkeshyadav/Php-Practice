@@ -1,0 +1,113 @@
+Example 1
+#########################################################
+    DELIMITER $$
+        CREATE PROCEDURE getAllData()
+        BEGIN
+            SELECT * FROM customers;
+        END$$
+    DELIMITER:
+
+    To call -> call getAllData();
+#########################################################
+
+
+Example 2
+#########################################################
+DELIMITER $$
+CREATE PROCEDURE localVariable()
+BEGIN
+	DECLARE orderId INT DEFAULT 10100;
+    SELECT * FROM orders WHERE orderNumber = orderId;
+END$$
+DELIMITER ;
+
+To call -> call localVariable();
+#########################################################
+
+
+
+
+MySQL stored procedure parameters
+#########################################################
+
+    In MySQL Stored Procedure, a parameter has one of three modes: IN,OUT, or INOUT.
+
+ IN – 
+    This is the default mode. When you define an IN parameter in a stored procedure, 
+    the calling program has to pass an argument to the stored procedure. In addition, the 
+    value of an IN parameter is protected. It means that even the value of the IN 
+    parameter is changed inside the stored procedure, its original value is retained 
+    after the stored procedure ends. In other words, the stored procedure only works on 
+    the copy of the IN parameter.
+
+ OUT – 
+    The value of an OUT parameter can be changed inside the stored procedure and 
+    its new value is passed back to the calling program. Notice that the stored procedure 
+    cannot access the initial value of the OUT parameter when it starts.
+
+ INOUT – 
+    An INOUT  parameter is a combination of IN  and OUT  parameters. It means 
+    that the calling program may pass the argument, and the stored procedure can modify 
+    the INOUT parameter, and pass the new value back to the calling program.
+
+
+
+Example 1 (IN)
+########################################################################
+    DELIMITER $$
+    CREATE PROCEDURE inParam(IN orderNum INT,IN customerNum INT)
+    BEGIN
+        SELECT * FROM orders WHERE orderNumber = orderNum AND customerNumber = customerNum;
+    END$$
+    DELIMITER:
+
+    To call -> call inParam(10425,119);
+########################################################################
+
+
+Example 2 (OUT)
+########################################################################
+    DELIMITER $$
+    CREATE PROCEDURE output1(OUT total_count INT) 
+    BEGIN
+        SELECT count(*) into total_count FROM orders;
+    END$$
+    DELIMITER:
+
+    To Call -> 
+    
+    call output1(@total_rec);
+    SELECT @total_rec as total;   
+########################################################################
+
+Example 2 (OUT)
+########################################################################
+    DELIMITER $$
+        CREATE PROCEDURE countTotalOrder(IN customerId INT,OUT totalOrder INT)
+        BEGIN
+            SELECT count(*) INTO totalOrder FROM orders WHERE customerNumber = customerId;
+        END$$
+    DELIMITER:
+
+    To Call -> 
+        set @customerId = 114;
+        call countTotalOrder(@customerId,@totalData);
+        SELECT @totalData as totalData;
+########################################################################
+
+Example 2 (INOUT)
+########################################################################
+
+DELIMITER $$
+CREATE PROCEDURE userOrderCount(INOUT table_value INT)
+BEGIN
+	SELECT count(*) into table_value FROM orders WHERE customerNumber = table_value;
+END$$
+DELIMITER:
+
+To call -> 
+set @table_val = 496;
+call userOrderCount(@table_val);
+SELECT @table_val as total_order;
+
+########################################################################

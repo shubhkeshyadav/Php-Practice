@@ -1,0 +1,49 @@
+1. 	A stored function in mysql is a set of sql statements that perform some task/opertation.
+	and return a single value.
+
+	Syntax :-
+
+	DELIMITER $$
+		CREATE FUNCTION check_age(age int)
+		RETURNS CHAR(100)
+		BEGIN
+			// body here
+		END 
+	$$ DELIMITER:
+
+	example 1
+
+		DROP FUNCTION IF EXISTS `check_age`;
+		DELIMITER $$
+			CREATE FUNCTION check_age(age int)
+			RETURNS CHAR(100)
+			BEGIN
+				DECLARE output varchar(100);
+				
+				IF age >= 18 THEN
+					SET output = 'you are eligible for vote';
+				ELSEIF ISNULL(AGE) THEN
+					SET output = 'age not defined';
+				ELSE
+					SET output = 'you can not vote';
+				END IF;    
+				return (output);
+			END 
+		$$ DELIMITER:
+
+	example 2
+
+			DROP FUNCTION IF EXISTS `order_price`;
+			DELIMITER $$
+				CREATE FUNCTION order_price(ordNo int)
+				RETURNS varchar(100)
+				BEGIN
+					DECLARE output varchar(100);
+				SELECT priceEach FROM orderdetails WHERE orderNumber  = ordNo limit 0,1 INTO output;
+					return output;
+				END 
+			$$ DELIMITER:
+
+			Call like : "SELECT orderNumber,order_price(orderNumber) FROM `orders`";
+
+		
