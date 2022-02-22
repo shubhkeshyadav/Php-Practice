@@ -1,0 +1,20 @@
+Php
+#########################################################################
+1. 	Suppose we have a domain abc.com and there is a image folder. I need to redistrict images to previus publicly.
+2. 	What is php.ini ?
+3. 	Php is php artisan in laravel ?
+4. 	What are model ?
+5. 	What is eloquent in laravel ?
+6. 	What is json ?
+7. 	What is rest api and explain it's method ?
+8. 	What is authentication in laravel ?
+9. 	What is patch method ?
+10. How to listout the image from a folder ?
+11. Why should be use jquery ?
+12. How laravel works ?
+13. What is .htaccess and how does it works. Explain ?
+
+Database
+##########################################################################
+1.	How to fetch data from database comma seperated ?
+2.	What is primary key and unique key. Explain defference ?
