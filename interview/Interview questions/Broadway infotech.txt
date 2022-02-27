@@ -18,3 +18,4 @@ Database
 ##########################################################################
 1.	How to fetch data from database comma seperated ?
 2.	What is primary key and unique key. Explain defference ?
+3.  What are the join explain it's type. Self join also ?

@@ -1,0 +1,8 @@
+Similarities between PUT and PATCH
+
+    The only similarity between the two is that they can both be used to update resources in a given location.
+
+Difference
+
+    When you want to update data through PUT method then you have to send full payload as a request
+    where with PATCH you need to send only parameters you want to update.

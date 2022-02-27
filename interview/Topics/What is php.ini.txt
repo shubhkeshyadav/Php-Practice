@@ -1,0 +1,11 @@
+Definition- 
+
+ 1-  At the time of PHP installation, php.ini is a special file provided as a default configuration file.
+
+ 2-  It’s very essential configuration file which controls, what a user can or cannot do with the website. 
+ 
+ 3- Each time PHP is initialized, the php.ini file is read by the system. 
+ 
+ 4- Sometimes you need to change the behavior of PHP at runtime, then this configuration file is to use.
+
+ 5- Note: Whenever some changes are performed in the file, you need to restart our web server.

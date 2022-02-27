@@ -1,0 +1,25 @@
+REST is an acronym for REpresentational State Transfer and an architectural style to implement restfull web services.
+
+REST stands for Representational State Transfer. It’s a software architectural style for implementing web services. Web services implemented using the REST architectural style are known as the RESTful web services.
+
+A REST API is an API implementation that adheres to the REST architectural constraints. It acts as an interface. The communication between the client and the server happens over HTTP. A REST API takes advantage of the HTTP methodologies to establish communication between the client and the server. REST also enables servers to cache the response that improves the application’s performance.
+
+The communication between the client and the server is a stateless process. By that, I mean every communication between the client and the server is like a new one.
+
+There is no information or memory carried over from the previous communications. So, every time a client interacts with the backend, the client has to send the authentication information to it as well. This enables the backend to figure out whether the client is authorized to access the data or not.
+
+REST API Methods
+
+    GET
+        Retrieve information about the REST API resource
+
+    POST
+        Create a REST API resource
+
+    PUT
+        Update a REST API resource
+
+    DELETE
+        Delete a REST API resource or related component
+
+
