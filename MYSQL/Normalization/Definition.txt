@@ -1,1 +1,8 @@
-dsfsdf
+-	It is the technique to organize the data. And it reduces the data residency.
+-	Normalization rules divide large tables into small tables and link them with relationship
+-	There are mainly 4 form of normalization
+
+1- 	1st NF (First Normal Form)
+2- 	2st NF (Second Normal Form)
+3- 	3st NF (Third Normal Form)
+4- 	Boyce–Codd normal form		

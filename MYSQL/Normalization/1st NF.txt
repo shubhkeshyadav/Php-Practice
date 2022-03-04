@@ -1,0 +1,20 @@
+1-  Each table should contain single row
+2-  Each record  should contain unique value
+3-  All attribute in relation should be atomic (individual value)
+
+Non 1st NF Table
+
+Id  |   Student Detail                              |  Course    
+1   |   Shubhkesh,9456435743,Shubhkesh@gmail.com    |  B.Tech
+2   |   ----------------------------------------    |   -----          
+3   |   ----------------------------------------    |   -----
+
+1st NF Table
+
+Id     |    StudentName | StudentId  |   StudentEmail       |  Course
+-----------------------------------------------------------------------
+1      |    Shubhkesh   | HM001      |   shubhkeh@gmail.com |  B.tech
+2      |    Shubhkesh   | HM001      |   shubhkeh@gmail.com |  B.tech
+3      |    Shubhkesh   | HM001      |   shubhkeh@gmail.com |  B.tech
+4      |    Shubhkesh   | HM001      |   shubhkeh@gmail.com |  B.tech
+5      |    Shubhkesh   | HM001      |   shubhkeh@gmail.com |  B.tech
