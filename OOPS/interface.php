@@ -3,7 +3,7 @@
 Interface in methlogy of software development or you can say interface in concept of object orientions in PHP. In interface must follow following things
 
 1. You can only define functions
-2. All the methods would be public by default you can not devine private function in interface
+2. All the methods would be public by default you can not define private function in interface
 3. Interface can not containt veriables
 4. All method which are difined in interface must be implemented in there implemented class
 5. While implementing to an interface you must use "implementes" keyword

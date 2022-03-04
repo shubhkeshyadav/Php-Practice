@@ -1,0 +1,11 @@
+How HTTP lifecyle works
+
+1-  If you go to www.google.com
+
+2-  First the browser needs to translate www.google.com to an IP address 
+
+3-  Then browser will open a TCP connection to the IP address of www.google.com and send a HTTP GET request over
+
+4-  The server software will get this HTTP request. It will somehow generate a HTTP response and send that back trough the TCP connection
+
+5-  When the browser gets the response, it typically renders it on screen. The HTTP request is now done. A click on "search" will send a new request to the server.

@@ -2,8 +2,7 @@
 /*
 - In strategy desing pattern it deside at run time how our code will work
 - strategy design pattern is a type of behavioural design pattern
-- Behavioral design pattern used to address how an applicatoin will run when have chunk of code
-  to perform same task
+- Behavioral design pattern used to address how an applicatoin will run when have chunk of code to perform same task
 - The strategy design pattern is most usefull in the situation where you have a class that may be similar but not related and different with there specific behavior
 */
 

@@ -1,0 +1,16 @@
+NOTICE: It is a message for saying what you should do and what you should not do.
+
+if you use a undefied veriable;
+<?php
+    $a="Defined error";
+    echo "Notice error";
+    echo $b;
+?>
+
+WARNING: It occurs at run time.But it do not interrupt Code execution.
+
+    1- Calling on an external file that does not exist in the directory
+
+    2- Wrong parameters in a function
+
+ERROR: It also occurs at run time, but program execution is not continued it terminates.

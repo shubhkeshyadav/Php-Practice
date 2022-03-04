@@ -75,7 +75,6 @@ Example 2 (OUT)
     DELIMITER:
 
     To Call -> 
-    
     call output1(@total_rec);
     SELECT @total_rec as total;   
 ########################################################################
