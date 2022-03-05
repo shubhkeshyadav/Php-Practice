@@ -1,0 +1,35 @@
+-   My table should be in 2nd NF previously 
+-   No transitive dependency should be exist between key attribute and non key attribute
+-   
+-   Non 3rd NF
+    -------------
+-   If "A" depends on "B" and "B" depends on "C" the "A" will depend on "C". 
+    so we should avoid this thing.
+
+Non 3rd NF
+Id  |   Name    |   Course  |   Marks   |   Grade
+--------------------------------------------------
+1   |   --      |   ---     |   --      |   -----
+2   |   --      |   ---     |   --      |   -----
+3   |   --      |   ---     |   --      |   -----
+
+Here course is depends on Name, and Marks is depends on course, and grade is depends on marks. 
+So here we can devide the table into multiple tables
+
+1 - studens
+Id  |   Name
+-------------
+1   |   ----     
+2   |   ----     
+3   |   ----     
+
+
+Id  |   StudentId   |   Course  |   Marks
+1   |   ---------   |   ------  |   -----
+2   |   ---------   |   ------  |   -----
+
+
+Id  |   StudentId   |   marks   |   grade
+1   |   ---------   |   -----   |   ------
+2   |   ---------   |   -----   |   ------
+3   |   ---------   |   -----   |   ------

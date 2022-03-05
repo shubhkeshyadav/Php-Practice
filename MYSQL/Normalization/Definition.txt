@@ -5,4 +5,7 @@
 1- 	1st NF (First Normal Form)
 2- 	2st NF (Second Normal Form)
 3- 	3st NF (Third Normal Form)
-4- 	Boyce–Codd normal form		
+4- 	Boyce–Codd normal form	
+    (BCNF is the advance version of 3NF. It is stricter than 3NF.)
+
+

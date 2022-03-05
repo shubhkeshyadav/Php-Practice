@@ -1,0 +1,45 @@
+1-  My table should be in 1st NF
+2-  No Partial dependencies should be exists between non-key attribute and key attribute
+3-  No dependencies in one table should be exists
+4-  We should divide table into multiple tables
+
+Non 2nd NF Table
+
+Id  |   Name    | Email |   CourseName  |   Subject | Marks  |   Grade
+----------------------------------------------------------------------    
+1   |   ----    | ----  |  ----         | ----      |   --   |   ----          
+2   |   ----    | ----  |  ----         | ----      |   --   |   ----       
+3   |   ----    | ----  |  ----         | ----      |   --   |   ----       
+4   |   ----    | ----  |  ----         | ----      |   --   |   ----       
+
+2nd NF Table
+----------------
+
+student_detail                                  
+
+Id     |    Name        | Email                 
+---------------------------------------             
+1      |    Shubhkesh   | xyz@gmail.com
+2      |    Shubhkesh   | xyz@gmail.com
+3      |    Shubhkesh   | xyz@gmail.com
+4      |    Shubhkesh   | xyz@gmail.com
+5      |    Shubhkesh   | xyz@gmail.com
+
+student_course
+
+Id  |   StudentId   |   StudentCourse
+----------------------------------------
+1   |   ----        |   -------------
+2   |   ----        |   -------------
+3   |   ----        |   -------------
+4   |   ----        |   -------------
+
+student_result
+
+Id  |   StudentId   |   Subject |   Marks   |   Grade
+------------------------------------------------------
+1   |   --------    |   ------- |   -----   |   -----
+2   |   --------    |   ------- |   -----   |   -----
+3   |   --------    |   ------- |   -----   |   -----
+4   |   --------    |   ------- |   -----   |   -----
+5   |   --------    |   ------- |   -----   |   -----
