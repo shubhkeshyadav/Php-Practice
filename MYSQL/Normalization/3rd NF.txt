@@ -3,7 +3,7 @@
 -   
 -   Non 3rd NF
     -------------
--   If "A" depends on "B" and "B" depends on "C" the "A" will depend on "C". 
+-   If "A" depends on "B" and "B" depends on "C" then "A" will depend on "C". 
     so we should avoid this thing.
 
 Non 3rd NF

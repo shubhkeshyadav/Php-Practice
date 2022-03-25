@@ -7,6 +7,7 @@
 	  * Static function can only access static veriable.
 	  * If you call non static method without creating object then this method can not contain non static veriables inside function
 	  * You can call static method with scope resolution operator(::) and with class object as 	 wll
+	  * Static method accept only static veribale value
 	  */
 
 	 Class Static_test

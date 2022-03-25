@@ -1,0 +1,54 @@
+SELECT salary, 
+rank() over (order by salary desc), 
+dense_rank() over (order by salary desc) 
+FROM `users` WHERE 1;
+
+salary |  rank  |  dense_rank
+------ |--------|-------------
+70     |  1     |  1
+-----------------------            
+65     |  2     |  2                     
+-----------------------            
+55     |  3     |  3            
+-----------------------            
+55     |  3     |  3            
+-----------------------            
+55     |  3     |  3            
+-----------------------            
+41     |  6     |  4            
+-----------------------            
+41     |  6     |  4            
+-----------------------            
+36     |  8     |  5            
+-----------------------            
+36     |  8     |  5            
+-----------------------            
+34     |  10    |  6   
+
+// get max salary through rank
+
+SELECT * FROM (SELECT salary, dense_rank() over (order by salary desc) as dense_ranka FROM `users` ) as temp WHERE temp.dense_ranka = 4 LIMIT 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

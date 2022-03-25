@@ -1,8 +1,8 @@
 <?php
 
-spl_autoload_register(function($class){
+spl_autoload_register(function($file_name){
 
-	$file_name = $class.'.php';
+	$file_name = $file_name.'.php';
 
 	echo $file_name.'<br>';
 

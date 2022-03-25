@@ -1,1 +1,11 @@
 SELECT max(payment_id) FROM payment WHERE payment_id < (SELECT max(payment_id) FROM payment)
+
+
+// 2nd height salary with join
+SELECT client_name,B.address,max(salary) FROM `users` AS A JOIN client_address as B ON A.id = B.clientId WHERE salary < (SELECT MAX(salary) FROM users);
+
+
+set @salaryType = 2;
+SELECT salary FROM users AS A WHERE 
+@salaryType-1 = (SELECT COUNT(id) FROM users AS B WHERE A.salary < B.salary);
+
