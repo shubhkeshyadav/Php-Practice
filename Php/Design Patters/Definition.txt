@@ -1,0 +1,11 @@
+In software engineering, a Design Pattern is a general repeatable solution to commonly occurring problem in software Design. Good Object-oriented designs should be reusable, maintainable and extensible and Design Patterns in PHP could be very helpful in doing that. It does not only help in solving problems, it implies an optimal way addressing common challenges.
+
+1.Creational
+    A.  Factory Design Pattern
+    B.  Singleton
+
+2. Structural
+    B.  Adapter Design Pattern
+
+3. Behavioral
+    A. Strategy Design Pattern

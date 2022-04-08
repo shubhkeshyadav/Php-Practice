@@ -1,0 +1,373 @@
+veriable vs constants
+
+requie vs include
+
+session
+
+cookie
+
+24 Minues
+
+execuation time of php default
+
+setCookie('cookieName','value',time()+324234));
+
+$message = 'xyz';
+
+$$message;
+
+disp();
+
+diSP();
+
+$nme = 33;
+
+$NAME = 33;
+
+$name = 123.4;
+
+create table user 
+name varchar(100) default null,
+age  int default,
+
+
+Put your changes to other branch without commit ?
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Type of polimorphis
+
+where log file stored
+
+++++++++++++++++++++++++++++++++++
+
+Brank A
+
+1
+2
+3
+
+comiited HJDJHDJHD&&&&
+
+git switch B 
+
+git merge A
+
+1
+2
+3
+
+git switch A
+
+git reset --hard HJDJHDJHD&&&&
+
+
+
+git stash
+
+git stash pop
+
+
+A . 
+
+git stash
+git stash apply 
+
+
+jdsfkjdsf
+dsf
+sd
+fds
+fdssdf
+
+git stash
+
+git pull oring dskfjdslkf
+
+git stsh pop
+
+composti key
+
+
+===============================================
+
+What is cloning ?
+
+Which design pattern you currently used ?
+
+What is singleton ?
+
+OverLoading vs overriding ?
+
+What do you understand by super in inheritance ?
+
+abstract vs interface ?
+
+Can we diefine constants in interface ?
+
+How interface is fully abstract ?
+
+===================================================
+
+Reverse Routing in laravel ?
+
+GarvegCollection ?
+
+where log are strored in php ?
+
+
+=========================================================
+
+<?php
+
+$n = array(5, 3, 7, 9, 6, 8);
+
+for($i = 0; $i < count($n); $i++)
+{
+    for($j = 0; $j < count($n)-1; $j++)
+    {
+        if($n[$j] < $n[$j+1])
+        {
+            $temp = $n[$j];
+            $n[$j] = $n[$j+1];
+            $n[$j+1] = $temp;
+        }
+    }   
+}
+
+echo '<pre>';
+
+$number = $n[1];
+
+print_r($n);
+print_r($number);
+
+$string = "piyush has good in programming.";
+$substr = "piyush";
+
+if(strpos($string, $substr))
+{
+    echo "found";
+}
+else
+{
+    echo "not found";
+}
+
+
+/*
+char vs varchar
+
+self refercing key
+
+timestamp vs datetime
+
+
+
+Select emails,count(emails) AS  total from users
+
+group by email having count(emails) > 1
+
+
+Student
+
+$cureent  = time() - 7 days;
+
+select * from user where create_at > $currenttime;
+
+count()
+sum();
+avg();
+
+$sql = "slele count(*)";
+
+reverse routing
+
+garvage collection
+
+php artisan clear:cache;
+
+
+split
+
+explode implode
+
+type of errors
+
+oops concept
+
+trait AA
+{
+	public function method1()
+}
+
+Class A
+{
+	use AA;
+}
+
+$string = "piyush has good in programming.";
+$substr = "piyush";
+if(strpos($string, $substr))
+{
+echo "found";
+}
+else
+{
+echo "not found";
+}
+
+//////////////////////////////
+$n = array(5, 3, 7, 9, 6, 8);
+echo array_search(7, $n);
+
+
+$n = array(5, 3, 7, 9, 6, 8);
+
+*/
+
+=====================================================================
+
+<?php
+
+function disp($arr,$num)
+{   
+    $status = false;
+   foreach($arr as $el1)
+   {    
+        $temp = 0;
+        
+        foreach($arr as $el2)
+        {
+            $sum = $el1+$el2;
+
+            if($el1 != $el2 && $sum == $num)
+            {
+               $status = true;
+               break; 
+            }
+        }
+        
+        if($status)
+        {
+            break;
+        }
+   }
+
+   var_dump($status);exit;
+}
+
+
+function disp2($arr,$num)
+{   
+    $status = false;
+    $sum = 0;
+    
+    foreach($arr as $k => $el)
+    {    
+        $next = isset($arr[$k+1])?$arr[$k+1]:0;
+        $sum = $el+$next;
+
+        if($sum == $num)
+        {
+           $status = true;
+           break; 
+        }
+    }
+
+   var_dump($status);exit;
+}
+
+$array  = [1,4,6,7,22,33,88];
+$num    = 11;
+
+
+
+disp2($array,$num);
+
+
+=======================================================================================
+
+duplicate delete
+
+api
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+$arr = ['22',''3];
+
+$this->load->libraray('sdfdf');
+
+$o = new LInbrariyName9)
+$o->sdfkfjdl()
+$o->ksdfj();
+
+error_reporting(1);
+display_error(E_ALL);
+
+
+$data = xyz();
+
+
+$route['user/manage/delete/{id}',['0-9']] = 'usercontreon';
+
+
+$data = ['1,2,3,4,4'];
+
+$thsi->load->view('index.php',['user_data' => $data]);
+
+$user_data
+
+Bulk of data = 
+
+$data[] = ['name' => 'dskfdjslf','age' => '31232']
+$data[] = ['name' => 'dskfdjslf','age' => '31232']
+$data[] = ['name' => 'dskfdjslf','age' => '31232']
+$data[] = ['name' => 'dskfdjslf','age' => '31232']
+$data[] = ['name' => 'dskfdjslf','age' => '31232']
+$data[] = ['name' => 'dskfdjslf','age' => '31232']
+$data[] = ['name' => 'dskfdjslf','age' => '31232']
+$data[] = ['name' => 'dskfdjslf','age' => '31232']
+$data[] = ['name' => 'dskfdjslf','age' => '31232']
+
+$this->db->insert($data);
+
+$id = $this->db->insert_id();
+
+Mysql
+
+Select * from emp 
+left join address as add on
+emp.id = add.emp_id
+left join salary as sal 
+on emp.id = sal.emp_id
+order by sal.amount desc
+limit 0,1
+
+
+Driver mysql
+
+primary key
+
+Table
+
+companyId companyName --- 	---	---	----
+
+Select *,sum(salary) as total_emp from empTable where companyName like 'HCL%'
+
+can pdf upload in db in base_64;
+
+
+
+
+
+
+
+?>
+
+
+?>
+
+
+

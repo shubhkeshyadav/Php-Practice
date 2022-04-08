@@ -11,7 +11,16 @@ Print
     2. print is slower compared to echo.
     3. Use of parenthesis is not required with the argument list.
     4. Print behave like a method and it return some response
-*/
+
+ *      echo "1","2"; output 12
+ *      print "1","2"; error
+ *      
+ *      $resp = print 'hello'; //   output
+ *      $resp = echo  'hello'; //   error
+
+        print_r($resp);    
+ * 
+ */
 
 $str = 'Shubhkesh Yadav';
 
