@@ -1,0 +1,28 @@
+Database cardinality ?
+------------------------
+
+1. Cardinality is a mathematical term that refers to the number of elements in a given set.
+
+2. In a database, cardinality usually represents the relationship between the data in two different tables
+
+3. Cardinality refers to the data in a column of a table, specifically how many unique values are in it
+
+There are three type of cardinality 
+
+a- High cardinality 
+    => Value in column like Id,EmailId these value keep unique so the have hight cardinality
+
+b- Medium carinality
+    => Value in column like address these kind of value may be duplicate in a table so they 
+        medium cardinality
+
+c- Low cardinality
+    => They value in column like maritalStatus , gender so this type of value would be duplicate it mean they have low cardinality
+
+    In data modelling terms, cardinality is how one table relates to another.
+    
+    1-1 (one row in table A relates to one row in tableB)
+    1-Many (one row in table A relates to many rows in tableB)
+    Many-Many (Many rows in table A relate to many rows in tableB)
+
+##########################################################################################    

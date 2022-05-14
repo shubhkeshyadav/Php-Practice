@@ -38,5 +38,17 @@ var_dump($resp);
 
 echo $str ? print 'yes' : print 'no'; // you can not use echo like this
 
+echo '<br><br>########################<br>';
+
+// echo has no return value
+//$resp = echo "Hi"; // it will give error
+$resp = print "Hi";
+var_dump($resp); // it will return 1
+
+echo '1','2';
+//print '1','2'; // it will give error
+
+echo true ? print 'yes' : print 'no'; 
+
 ?>
        

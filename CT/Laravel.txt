@@ -1,0 +1,9 @@
+How laravel works (Request Cyle in larave) ?
+Ans - 
+1. firstly request goes to public/index.php
+2. Then after request goes to bootstrap/app.php
+3. It return the instance of application from app.php
+4. Then request goes to app/http/kernel.php and all the application get bootstraped
+    and load all service providers
+5. From there request goest to middleware
+6. From there request goes to router then controller 

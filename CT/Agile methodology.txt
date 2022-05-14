@@ -1,0 +1,24 @@
+1.  Agile is an iterative approach to project management and software development
+
+2.  Agile helps teams deliver value to their customers faster
+
+to follow we use scrum, kanba frameworks
+
+We follow agile to achieve continues developement and delivery
+
+1. Requirement gathering
+2. Analyzing the requirements
+3. Design the requirements
+4. Development
+5. Deployment
+6. Testing
+7. Feedback
+
+
+Change request in agile
+
+1. First we observ the chagne request and find the value of chagne request in low, medium or high
+
+based on that if it hight then we add that in current sprint 
+
+otherwise we add that in furhter sprint

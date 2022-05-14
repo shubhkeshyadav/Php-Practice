@@ -1,0 +1,97 @@
+Ques1. 
+When you write code on your local machine, how do you push it to production and the process that you are following. ?
+Ans1.
+Normally we write code on my local machiene. 
+
+In normal development we push my code to remove branch and let my TL know the branch
+and he merge the branch with master and push code to production
+#########################################################################################
+
+Quest 2.
+Tell me about how you take care of BUG?
+__________________________________________
+Ans2. 
+Normally during the code we use try and catch block 
+and catch block we usually log the erros in log file so it became bit easy to debug during any error occure
+error_log()
+
+We can enable the errors from php.ini file to display overy browser or we can use 
+
+ini_set('display_errors',1);
+error_reporting(E_ALL);
+#########################################################################################
+
+Ques3.
+If any bug is found while regression how do you resolve that?
+
+Ans3. 
+it totally depends on the error type. because there must be some error message.
+if it is related to DB then will resolve that.
+If error message is not proper then will got the error log
+#########################################################################################
+
+Ques4.
+    How you are maintaining code quality. Do you know about sonarqube?
+Ans.
+1. The code should be readable , consistent  , extandable , and reuseable.
+2. The code should not be repeatable .
+3. Should void the dependiency in the class just enjust the dependiency
+4. Proper naming convention should be there so that other developer can understand
+5. Property commenting should be there
+6. Large code should be devided into small chunks
+7. In the VScode be install the sonalLint plugin duing the development so it keep gives the suggestions to improve the code
+
+SonarQube is a Code Quality Assurance tool that collects and analyzes source code, and provides reports for the code quality of your project.
+#########################################################################################
+
+Ques.5.
+How you monitor the application. Do you know any tools for monitoring applications?
+Ans
+Normally we monitor with 3rd party tools like GT matrix. to monitor the application
+
+#########################################################################################
+Ques6.
+How to handle the time-consuming task in the background?
+Ans6.
+In laravel we can use job and queue and if core php we can use
+we can use cell command for background execuation
+
+$pdata = http_build_query(['name'=>'shubhkesh']);
+$url = 'http://10.0.4.107/shubhkesh/prac/run_cmd_php/crons.php';
+$cmd = "/usr/bin/curl -k -d '{$pdata}' {$url} > /dev/null 2>&1 &";
+exec($cmd);
+
+#########################################################################################
+Ques7. About NoSQL?
+No sql mean not only sql. We can store data into tables and as well in form of 
+key value. So the performace became faster.
+But transaction does not work accuratly some time it may occure problems
+
+#########################################################################################
+Which cloud services do you know and use?
+I have used on only s3 of aws
+
+#########################################################################################
+Default execution time in php ?
+- 30 Second 
+ini_set('max_execution_time', 30); 
+
+#########################################################################################
+Default max file upload size in php ?
+- 2MB
+upload_max_filesize (you can change through php.ini)
+
+#########################################################################################
+Default post data size in php ?
+- 8 MB 
+post_max_size (You can change through php.ini)
+
+
+
+
+
+
+
+
+
+

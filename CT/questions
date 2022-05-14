@@ -1,0 +1,85 @@
+1) Database cardinality
+
+2) What do you think about Laravel Model class? Which function do you write in model class?
+
+3) What are abstraction, encapsulation, and polymorphism? A practical example of the same and you implement this anywhere?
+
+4) When you write code on your local machine, how do you push it to production and the process that you are following.
+
+5) About agile methodology and what process you are following in the previous project.
+
+6) Tell me about how you take care of BUG.
+
+7) If any bug is found while regression how do you resolve that?
+
+8) How you are maintaining code quality. Do you know about sonarqube?
+
+9) How you monitor the application. Do you know any tools for monitoring applications?
+
+10) Ask me to share any recent module that I worked on. Questions on that.
+
+11) What is Service Container & Service Providers in Laravel? In which scenario you will create your own service provider.
+
+12) How to handle the time-consuming task in the background.
+
+13) About NoSQL.
+
+14) Which cloud services do you know and use.
+
+ 
+
+1) What is abstraction and different types to achieved abstraction in PHP. Which one is the partial type?
+
+2) Laravel features. questions on that.
+
+3) What is middleware?
+
+4) MySQL basic questions.
+
+5) Table 1 User: id, name
+
+Table 2 Pics: id, user_id, path, created_at
+
+Q1) select users who don't have any pics.
+
+Q2) select users who have more than two pics.
+
+6) About the last project and task.
+
+7) How to include Laravel features into the small project and used individually.
+
+ 
+
+ 
+
+###########
+
+ 
+
+1- Find the 2nd heighest value from the given array. $num = array(12,19,30,15,25);
+
+2- Using the string $str = "user/10/city/20/page/02"; Create an array like this: array('user'=>10,'city'=>20,'page'=>02);
+
+3- How does session works in PHP?
+
+4- What is CORS?
+
+5- What are the stored procedures and triggers in mysql database?
+
+6- What is the difference betweeb Innodb and myisam database engine?
+
+7- What is the model in Laravel? How do we create custom table name in laravel?
+
+8- What is Redis cache?
+
+9- There is a table of employees having columns like id,name,age and joining_date.
+
+I- Find the oldest one employee from the table.
+
+II- Find the 2nd oldest employee from the table.
+
+10- What is the difference between git fetch and git pull?
+
+11- There is a string $str="I love my India". create an array from the string without using inbuilt explode() function in PHP,
+
+12- What is the difference between GET and REQUEST in PHP?

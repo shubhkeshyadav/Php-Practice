@@ -1,0 +1,57 @@
+$a = '1'; 
+$b = &$a; 
+$b = "2$b";
+
+echo $a.", ".$b;
+
+1 21
+
+#####################################
+
+delect from user where id in (
+    select group_concat(id) from user
+    group by name 
+    having count(name) > 1
+    where id != max(id)
+)
+
+######################################
+
+$obj1 = new DateTime('2022-01-02');
+$obj2 = new DateTime('2022-01-02');
+
+
+$obj = $obj1->diff($obj2);
+
+$obj->d;
+
+#######################################
+
+curl
+
+#######################################
+
+$val = $_SERVER;
+
+
+########################################
+
+
+strstr();
+stristr();
+
+###########################################
+heaerd('Location : sdfdsf');
+
+explain table;
+
+array_rerser;
+
+#######################################
+
+
+
+
+
+
+
