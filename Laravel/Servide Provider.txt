@@ -1,0 +1,5 @@
+1. Service providers in laravel application is the central place where application is bootstrapped. 
+
+2. That is, laravel’s core services and our application’s services, classes and their dependencies are injected in service container through providers. 
+
+3. Servies are added to service container by servie providers

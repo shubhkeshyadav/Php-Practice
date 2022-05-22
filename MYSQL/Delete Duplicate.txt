@@ -2,3 +2,4 @@ DELETE FROM users WHERE id NOT IN
 (
     SELECT max(id) FROM `users` GROUP BY client_code, client_name,contact_no
 )
+

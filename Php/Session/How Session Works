@@ -1,0 +1,11 @@
+When you set session on server follwoing thing happen over server
+
+1. one file create in unique session ID file name are like "sess_i8oskb667m26tp6h31tsh3qli8"
+2. The location keep on  C:\xampp\tmp
+3. You can change the location in php.ini where 
+    session.save_path="C:\xampp\tmp" where you want to save session
+6. With the same session ID one cookie created in client machiene 
+   cookie name are PHPSESSID and value are i8oskb667m26tp6h31tsh3qli8
+7. When u hit any request to server this cookie goes over server with session id
+8. With sesison ID apache can reconize which session is set for which user 
+9. the value in temp file like this name|s:15:"shubhkesh";
