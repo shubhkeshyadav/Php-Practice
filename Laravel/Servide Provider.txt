@@ -2,4 +2,18 @@
 
 2. That is, laravel’s core services and our application’s services, classes and their dependencies are injected in service container through providers. 
 
-3. Servies are added to service container by servie providers
+3. Servies are added into service container by servie providers
+
+4. A service is registered by service prover into service container so that , that service can we accessiable into entire application
+
+e.g
+
+$this->app->singleton(PaymentInterFace::class,function(){
+        
+        if(request()->has('paypal'))
+        {
+            return new PayPalService('usd');
+        }
+        return new StripeService('usd');
+    });
+}
