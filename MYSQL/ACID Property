@@ -1,0 +1,20 @@
+What are ACID property ?
+
+Ans :-In the context of transaction processing, the acronym ACID refers to the four key properties of a transaction: atomicity, consistency, isolation, and durability
+
+1. Atomicity:-
+    -   A transaction contains multiple instructions edither all instruction should execute either none of them will execute mean eitehr all operations will execute either none of them will execute that is called atomicity
+    -   Execution of transaction will be atomic in nature(means either all or none operation will execute)
+    -   Transaction Management Component module take care of atomicity
+
+2. Consistency:- If a data in database was consistence before the transaction that should consistence after the transaction.
+
+3. Isolation:-
+    -   Multipel transactions can run concurrently without knowing what is happing with other
+    -   Multiple transactions can occur concurrently without leading to the inconsistency of the database state. Transactions occur independently without interference with other
+    -    concurrency control component take care of Isolation
+
+4. Durability:-
+    -   All the changes that happen in database after transaction that chages should be permanently
+    -   This property ensures that once the transaction has completed execution, the updates and modifications to the database are stored in and written to disk and they persist even if a system failure occurs. These updates now become permanent and are stored in non-volatile memory. The effects of the transaction, thus, are never lost. 
+    - Recovery Manager Component takecare of Durability
