@@ -15,5 +15,4 @@ $xml = simplexml_load_string($content);
 echo '<pre>';
 print_r($xml);
 
-
 ?>

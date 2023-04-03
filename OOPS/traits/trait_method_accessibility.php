@@ -24,7 +24,8 @@ trait test
  */
 class Parents
 {
-	use test{
+	use test
+	{
 		test::disp as public disp_new; 
 		test::disp as public; 
 	}

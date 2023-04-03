@@ -1,7 +1,7 @@
 <?php
 
 /*
-	The __get() magic method is called when you access private propery or the propery which is not defined, the the __get() magic method is called
+	The __get() magic method is called when you access private property or the property which is not defined, the the __get() magic method is called
   , it contain one parameters (property name)
 */
 

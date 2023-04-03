@@ -1,7 +1,7 @@
 <?php
 
 /*
-- A clas should be open for extension(addition of more functionality) but closed for modification.
+- A class should be open for extension(addition of more functionality) but closed for modification.
 - According to this principle a application must be easily extensible with new feature without having modify its existing functionality 
 */
 

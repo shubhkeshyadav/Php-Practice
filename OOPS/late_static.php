@@ -10,7 +10,6 @@ Those are the two basic concepts behind it. The way self, parent and static oper
 
 Class DB
 {	
-
 	protected static $table = 'user';
 
 	public static function select()

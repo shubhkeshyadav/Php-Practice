@@ -1,4 +1,4 @@
-To communicate from client to server. During cummunication we can shere data to server
+To communicate from client to server. During cummunication we can share data to server
 there are blelow method on which we can send data to server
 
 1. GET
@@ -7,25 +7,30 @@ there are blelow method on which we can send data to server
 4. DELETE
 5. PATCH
 
-1. Get
-    - GET data can we visible in url . You only can send 2 KB data throgh get method
-    - this is idempotent (nothing side effect would be once you hit same request multiple time)
+6. Get
 
-2. POST
-    - POST is used to send data to a server to create/update a resource.
-    - DATA don't visible any where when you use post mehtod. By default you can send 8MB data through post method. But you can change it through php.ini file.
-    - The data sent to the server with POST is stored in the request body of the HTTP request:
-    - post is not idempotent (multiple request may create multiple resources(record))
+   - GET data can we visible in url . You only can send 2 KB data throgh get method
+   - this is idempotent (nothing side effect would be once you hit same request multiple time)
 
-3. PUT
-    - in normally we sould use put when we updating any thing over server
-    - this is idempotent means nothing wil happen once you hit multiple time
+7. POST
 
-4. PATCH
-    - patch method should be for partial update the any things
-    - this is also idempotent nothing will happen once you hit multiple time
+   - POST is used to send data to a server to create/update a resource.
+   - DATA don't visible any where when you use post mehtod. By default you can send 8MB data through post method. But you can change it through php.ini file.
+   - The data sent to the server with POST is stored in the request body of the HTTP request:
+   - post is not idempotent (multiple request may create multiple resources(record))
 
-5.  DELETE
+8. PUT
+
+   - in normally we sould use put when we updating any thing over server
+   - this is idempotent means nothing wil happen once you hit multiple time
+
+9. PATCH
+
+   - patch method should be for partial update the any things
+   - this is also idempotent nothing will happen once you hit multiple time
+
+10. DELETE
+
     - Delete method should be use while deleting any record
     - this is also idempotent nothing will happen once you hit multiple time
 
@@ -35,4 +40,3 @@ there are blelow method on which we can send data to server
     <input type="hidden" name="_method" value="DELETE">
     <input type="hidden" name="_method" value="PUT">
     <input type="hidden" name="_method" value="PATCH">
-

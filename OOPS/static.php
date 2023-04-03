@@ -1,6 +1,9 @@
 <!-- 
 
 Static veriable initialized once in a program and retains(keep there value) its value unlike normal veriable get initialized every time in a program;
+ 
+There are few things happen with static
+1. Non static mehtod can have static veriable with self::$name like this 
 
  -->
 
